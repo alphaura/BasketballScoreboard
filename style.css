@@ -36,7 +36,7 @@ img {
     display: none;
 }
 
-/* Setting up the positioning of the scoreboard content */
+/* Setting up the positioning of the scoreboard content + design*/
 
 h1 {
     text-align: center;
@@ -63,6 +63,20 @@ h3 {
     text-decoration: underline;
 }
 
+
+h4 {
+    padding-inline: 2rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+
+.away {
+    text-align: center;
+}
+
+/* Buttons design */
+
 button {
     margin-block: 1rem;
     border-radius: .7rem;
@@ -79,16 +93,6 @@ button:active {
     color: white;
 }
 
-h4 {
-    padding-inline: 2rem;
-    font-weight: bolder;
-    margin-top: 2rem;
-}
-
-
-.away {
-    text-align: center;
-}
 
 
 

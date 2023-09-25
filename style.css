@@ -34,6 +34,8 @@ img {
     min-width: 18rem;
     height: 30rem;
     margin: 0 auto;
+    border: #BA1B41 solid 2px;
+
 }
 
 .tablet, .desktop {

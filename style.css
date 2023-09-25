@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-image {
+    position: relative;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 129, 129, 76%);
+    width: 18rem;
+    height: 30rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.tablet, .desktop {
+    display: none;
+}
+
+/* Setting up the positioning of the scoreboard content */
+
+h1 {
+    text-align: center;
+}
+
+.score-counter {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.home {
+    text-align: center;
+}
+
+h3 {
+    padding-block: 2rem;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+button {
+    margin-block: 1rem;
+    border-radius: .7rem;
+    border: #BA1B41 solid 2px;
+    padding: .5rem 0;
+    font-size: .7rem;
+    min-width: 5rem;
+    background-color: #F3D9C2;
+    font-weight: bold;
+}
+
+button:active {
+    background-color: #BA1B41;
+    color: white;
+}
+
+h4 {
+    padding-inline: 2rem;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+
+.away {
+    text-align: center;
+}
+
+
+
+
+/* <section class="scoreboard">
+        <div class="container">
+            <h1>SCOREBOARD</h1>
+            <div class="score-counter">
+                <div class="home">
+                    <h2>HOME</h2>
+                    <h3>0</h3>
+                    <div class="buttonflex">
+                        <button id="home3p">3-POINTS</button>
+                        <button id="home2p">2-POINTS</button>
+                        <button id="home1p">1-POINT</button>
+                    </div>
+                </div>
+                <h4>VS</h4>
+                <div class="away">
+                    <h2>AWAY</h2>
+                    <h3>0</h3>
+                    <div class="buttonflex">
+                        <button id="away3p">3-POINTS</button>
+                        <button id="away2p">2-POINTS</button>
+                        <button id="away1p">1-POINT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> */

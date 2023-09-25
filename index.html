@@ -25,26 +25,26 @@
             <div class="score-counter">
                 <div class="home">
                     <h2>HOME</h2>
-                    <h3>0</h3>
+                    <h3 id="counthome">0</h3>
                     <div class="buttonflex">
-                        <button id="home3p">3-POINTS</button>
-                        <button id="home2p">2-POINTS</button>
-                        <button id="home1p">1-POINT</button>
+                        <button id="home3p" onclick="home3p()">3-POINTS</button>
+                        <button id="home2p" onclick="home2p()">2-POINTS</button>
+                        <button id="home1p" onclick="home1p()">1-POINT</button>
                     </div>
                 </div>
                 <h4>VS</h4>
                 <div class="away">
                     <h2>AWAY</h2>
-                    <h3>0</h3>
+                    <h3 id="countaway">0</h3>
                     <div class="buttonflex">
-                        <button id="away3p">3-POINTS</button>
-                        <button id="away2p">2-POINTS</button>
-                        <button id="away1p">1-POINT</button>
+                        <button id="away3p" onclick="away3p()">3-POINTS</button>
+                        <button id="away2p" onclick="away2p()">2-POINTS</button>
+                        <button id="away1p" onclick="away1p()">1-POINT</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <script src="index.js" defer></script>
 </body>
 </html>

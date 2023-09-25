@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -18,6 +17,12 @@ img {
 
 .bg-image {
     position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image\ 3.png); /* Mobile background image */
 }
 
 .scoreboard {
@@ -26,9 +31,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 129, 129, 76%);
-    width: 18rem;
+    min-width: 18rem;
     height: 30rem;
-    padding: 2rem;
     margin: 0 auto;
 }
 
@@ -40,6 +44,7 @@ img {
 
 h1 {
     text-align: center;
+    padding-top: 2rem;
 }
 
 .score-counter {
@@ -70,6 +75,11 @@ h4 {
     margin-top: 2rem;
 }
 
+.buttonflex {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .away {
     text-align: center;
@@ -93,33 +103,77 @@ button:active {
     color: white;
 }
 
+ /* Tablet */
+  
+  @media (min-width: 700px){
+    .bg-image {
+      background-image: url(image\ 2.png);
+    }
 
+    button {
+        cursor: pointer;
+    }
 
+    .scoreboard {
+        min-width: 30rem;
+    }
 
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
 
-/* <section class="scoreboard">
-        <div class="container">
-            <h1>SCOREBOARD</h1>
-            <div class="score-counter">
-                <div class="home">
-                    <h2>HOME</h2>
-                    <h3>0</h3>
-                    <div class="buttonflex">
-                        <button id="home3p">3-POINTS</button>
-                        <button id="home2p">2-POINTS</button>
-                        <button id="home1p">1-POINT</button>
-                    </div>
-                </div>
-                <h4>VS</h4>
-                <div class="away">
-                    <h2>AWAY</h2>
-                    <h3>0</h3>
-                    <div class="buttonflex">
-                        <button id="away3p">3-POINTS</button>
-                        <button id="away2p">2-POINTS</button>
-                        <button id="away1p">1-POINT</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> */
+    h4 {
+        font-size: 1.2rem;
+    }
+   
+    /* Buttons design */
+    
+    button {
+        font-size: .9rem;
+        min-width: 6rem;
+    }
+    
+  }
+
+  /* Desktop */
+  
+  @media (min-width: 1024px) {
+    .bg-image {
+      background-image: url(Background.png);
+    }
+
+    .scoreboard {
+        min-width: 40rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 1.9rem;
+    }
+    
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+   
+    /* Buttons design */
+    
+    button {
+        font-size: .9rem;
+        min-width: 6rem;
+    }
+  }

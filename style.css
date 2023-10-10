@@ -105,6 +105,12 @@ button:active {
     color: white;
 }
 
+#restartGame {
+    padding: .5rem;
+    margin: 4rem auto 0;
+    display: flex;
+}
+
  /* Tablet */
   
   @media (min-width: 700px){
@@ -141,6 +147,10 @@ button:active {
     button {
         font-size: .9rem;
         min-width: 6rem;
+    }
+
+    #restartGame {
+        margin-top: 1.5rem;
     }
     
   }

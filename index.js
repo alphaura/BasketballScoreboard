@@ -32,3 +32,10 @@ function away1p() {
     count2 += 1
     countAway.textContent = count2
 }
+
+function restartGame() {
+    count1 = 0
+    count2 = 0
+    countHome.textContent = count1
+    countAway.textContent = count2
+}
